@@ -1,6 +1,6 @@
 # cardano-api
 
-Promise wrapper for the [Cardano API](https://cardanodocs.com/technical/explorer/api/).  
+Wrapper for the [Cardano API](https://cardanodocs.com/technical/explorer/api/).  
 
 ```js
 const { cardano } = require('cardano-api')
@@ -78,7 +78,6 @@ cardano.pagesTotal(query)
 #### cardano.genesisAddress() - [/api/genesis/address/pages](https://cardanodocs.com/technical/explorer/api/#path--api-genesis-address-pages)
 
 ```js
-
 const query = {
     page: 1,        // Optional
     pageSize: 3,    // Optional
