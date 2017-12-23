@@ -114,7 +114,7 @@ cardano.epoch(query)
 #### cardano.transaction() - [/api/txs/summary/{txid}](https://cardanodocs.com/technical/explorer/api/#path--api-txs-summary--txid-)
 
 ```js
-Get summary information about a transaction
+// Get summary information about a transaction
 const query = {
     txid: 'Ae2tdPwU...fQwGpm' // Required, transaction to check
 }
