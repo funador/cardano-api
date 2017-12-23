@@ -130,15 +130,15 @@ cardano.transactionLast()
   .then(data => console.log('transactionLast', data))
 ```
 
-### test
-
-``` npm test```
-
-### issues
+### Issues
 
 Something not working?  Please [open an issue](https://github.com/funador/cardano-api/issues)
 
-### cardano tips
+### Test
+
+``` npm test```
+
+### Cardano tips
  ```DdzFFzCqrht8iQ2utWYssBnfGvSqkGfM7fxHXZWoB57ormT17td1CY4Eye7bADF6HpeGC57vwV5ZPzmVjiZRQEkAD9Rc4P8LDF7FfYne```
  
- ##### Thank you
+ ##### Cheers!
