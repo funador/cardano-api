@@ -18,7 +18,7 @@ describe('cardano api wrapper', () => {
   describe('cardano.address()', () => {
     it('should return information about an address', () => {
       const query = {
-        path: 'DdzFFzCqrhsoTFwZkQRfYMGMvKwmej3wEbGevViniuuDPTwJoGfLYpWo2zXD8G7cz5ti3m2sz2vsheD4vskNCYVuedsPApxRdDZWJYrm'
+        address: 'DdzFFzCqrhsoTFwZkQRfYMGMvKwmej3wEbGevViniuuDPTwJoGfLYpWo2zXD8G7cz5ti3m2sz2vsheD4vskNCYVuedsPApxRdDZWJYrm'
       }
 
       return cardano.address(query)
@@ -35,7 +35,7 @@ describe('cardano api wrapper', () => {
   describe('cardano.block()', () => {
     it('should return the given block', () => {
       const query = {
-        path: '52659df3f8ef7997e0dc8c04b041a956512429b95f4a28275cb53c9f6a195a70',
+        hash: '52659df3f8ef7997e0dc8c04b041a956512429b95f4a28275cb53c9f6a195a70',
       }
 
       return cardano.block(query)
@@ -85,7 +85,7 @@ describe('cardano api wrapper', () => {
   describe('cardano.epoch()', () => {
     it('should return the specified epoch', () => {
       const query = {
-        path: 3
+        epoch: 3
       }
 
       return cardano.epoch(query)
@@ -152,7 +152,7 @@ describe('cardano api wrapper', () => {
   describe('cardano.transaction()', () => {
     it('should return the specified transaction', () => {
       const query = {
-        path: 'f3d4686499fd54dcbadc1d501047aadb52b28704fb8126f10f4123d69e3ac99b'
+        txid: 'f3d4686499fd54dcbadc1d501047aadb52b28704fb8126f10f4123d69e3ac99b'
       }
 
       return cardano.transaction(query)

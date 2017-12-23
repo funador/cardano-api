@@ -7,7 +7,7 @@ Promise wrapper for the [Cardano API](https://cardanodocs.com/technical/explorer
 const { cardano } = require('cardano-api')
 
 const query = {
-    path: 'Ae2tdPwU...fQwGpm' // the address to query
+    address: 'Ae2tdPwU...fQwGpm' // the address to query
 }
 
 // promise
@@ -31,13 +31,10 @@ myCardanoFunc()
 
 #### cardano.address() - [/api/addresses/summary/{address}](https://cardanodocs.com/technical/explorer/api/#path--api-addresses-summary--address-)
 
-
-
-
 ```js
 // Get summary information about an address
 const query = {
-    path: 'Ae2tdPwU...fQwGpm' // Required, wallet address to check
+    address: 'Ae2tdPwU...fQwGpm' // Required, wallet address to check
 }
 
 cardano.address(query)
@@ -48,7 +45,7 @@ cardano.address(query)
 ```js
 // 
 const query = {
-    path: 'Ae2tdPwU...fQwGpm' // Required, block hash to check
+    hash: 'Ae2tdPwU...fQwGpm' // Required, block hash to check
 }
 
 cardano.block(query)
@@ -103,7 +100,7 @@ cardano.genesisSummary()
 
 ```js
 const query = {
-    path: 3,    // Required, epoch to check
+    epoch: 3,    // Required, epoch to check
     slot: 24    // Optional
 }
 
@@ -115,7 +112,7 @@ cardano.epoch(query)
 
 ```js
 const query = {
-    path: 'Ae2tdPwU...fQwGpm' // Required, transaction to check
+    txid: 'Ae2tdPwU...fQwGpm' // Required, transaction to check
 }
 
 cardano.transaction(query)
