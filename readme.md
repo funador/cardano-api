@@ -43,7 +43,7 @@ cardano.address(query)
 
 #### cardano.block() - [/api/blocks/summary/{hash}](https://cardanodocs.com/technical/explorer/api/#path--api-blocks-summary--hash-)
 ```js
-// 
+// Get block's summary information
 const query = {
     hash: 'Ae2tdPwU...fQwGpm' // Required, block hash to check
 }
@@ -56,6 +56,7 @@ cardano.block(query)
 Get the list of total pages
 
 ```js
+// Get the list of total pages
 const query = {
     pageSize: 3 // Optional
 }
@@ -67,6 +68,7 @@ cardano.pagesTotal(query)
 #### cardano.genesisAddress() - [/api/genesis/address/pages](https://cardanodocs.com/technical/explorer/api/#path--api-genesis-address-pages)
 
 ```js
+
 const query = {
     page: 1,        // Optional
     pageSize: 3,    // Optional
@@ -99,6 +101,7 @@ cardano.genesisSummary()
 #### cardano.epoch() - [/api/search/epoch/{epoch}](https://cardanodocs.com/technical/explorer/api/#path--api-search-epoch--epoch-)
 
 ```js
+// Search the blocks by epoch and slot. Slot is optional
 const query = {
     epoch: 3,    // Required, epoch to check
     slot: 24    // Optional
@@ -111,6 +114,7 @@ cardano.epoch(query)
 #### cardano.transaction() - [/api/txs/summary/{txid}](https://cardanodocs.com/technical/explorer/api/#path--api-txs-summary--txid-)
 
 ```js
+Get summary information about a transaction
 const query = {
     txid: 'Ae2tdPwU...fQwGpm' // Required, transaction to check
 }
@@ -122,6 +126,7 @@ cardano.transaction(query)
 #### cardano.transactionLast() - [/api/txs/last](https://cardanodocs.com/technical/explorer/api/#path--api-txs-last)
 
 ```js
+// Get information about the 20 latest transactions
 cardano.transactionLast()
   .then(data => console.log('transactionLast', data))
 ```
