@@ -56,7 +56,9 @@ cardano.block(query)
 // Get brief information about transaction based on blocks
 // For info on specific transactions use cardano.transaction()
 const query = {
-    hash: '52659d...195a70' // Required, block hash to check
+    hash: '52659d...195a70',    // Required, block hash to check
+    limit: 10,                  // Optional
+    offset: 2                   // Optional
 }
 
 cardano.blockTransaction(query)
