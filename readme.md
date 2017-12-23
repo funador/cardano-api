@@ -7,7 +7,7 @@ Promise wrapper for the [Cardano API](https://cardanodocs.com/technical/explorer
 const { cardano } = require('cardano-api')
 
 const query = {
-    address: 'Ae2tdP...fQwGpm' // the address to query
+    address: 'Ae2tdP...fQwGpm' // the address to check
 }
 
 // promise

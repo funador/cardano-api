@@ -1,6 +1,6 @@
 {
   "name": "cardano-api",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Node promise wrapper for the Cardano Explorer API",
   "main": "lib/cardano.js",
   "scripts": {
@@ -11,6 +11,7 @@
   ],
   "author": "jesse heaslip",
   "license": "MIT",
+  "bugs": "https://github.com/funador/cardano-api/issues",
   "dependencies": {
     "request": "^2.83.0"
   },
