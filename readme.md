@@ -1,6 +1,7 @@
 # cardano-api
 
 Promise wrapper for the [Cardano API](https://cardanodocs.com/technical/explorer/api/).  
+### do not use at the moment, pls!
 
 ```js
 const { cardano } = require('cardano-api')
@@ -32,7 +33,9 @@ myCardanoFunc()
 
 
 
+
 ```js
+// Get summary information about an address
 const query = {
     path: 'Ae2tdPwU...fQwGpm' // Required, wallet address to check
 }
@@ -43,6 +46,7 @@ cardano.address(query)
 
 #### cardano.block() - [/api/blocks/summary/{hash}](https://cardanodocs.com/technical/explorer/api/#path--api-blocks-summary--hash-)
 ```js
+// 
 const query = {
     path: 'Ae2tdPwU...fQwGpm' // Required, block hash to check
 }
@@ -51,14 +55,15 @@ cardano.block(query)
   .then(data => console.log('block', data))
 ```
 
-#### cardano.blocksTotal() - [/api/blocks/pages/total](https://cardanodocs.com/technical/explorer/api/#path--api-blocks-pages-total)
+#### cardano.pagesTotal() - [/api/blocks/pages/total](https://cardanodocs.com/technical/explorer/api/#path--api-blocks-pages-total)
+Get the list of total pages
 
 ```js
 const query = {
     pageSize: 3 // Optional
 }
 
-cardano.blockTotal(query)
+cardano.pagesTotal(query)
   .then(data => console.log('blockTotal', data))
 ```
 
@@ -98,8 +103,8 @@ cardano.genesisSummary()
 
 ```js
 const query = {
-    path: 3,  // Required, epoch to check
-    slot: 24  // Optional
+    path: 3,    // Required, epoch to check
+    slot: 24    // Optional
 }
 
 cardano.epoch(query)
