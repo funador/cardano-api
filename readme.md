@@ -1,7 +1,6 @@
 # cardano-api
 
 Promise wrapper for the [Cardano API](https://cardanodocs.com/technical/explorer/api/).  
-### This is not quite finished :/
 
 ```js
 const { cardano } = require('cardano-api')
@@ -54,7 +53,8 @@ cardano.block(query)
 
 #### cardano.blockTransaction() - [/api/blocks/txs/{hash}](https://cardanodocs.com/technical/explorer/api/#path--api-blocks-txs--hash-)
 ```js
-// Get brief information about transactions
+// Get brief information about transaction based on blocks
+// For info on specific transactions use cardano.transaction()
 const query = {
     hash: '52659d...195a70' // Required, block hash to check
 }
