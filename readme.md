@@ -100,7 +100,7 @@ cardano.genesisSummary()
 #### cardano.epoch() - [/api/search/epoch/{epoch}](https://cardanodocs.com/technical/explorer/api/#path--api-search-epoch--epoch-)
 
 ```js
-// Search the blocks by epoch and slot. Slot is optional
+// Search the blocks by epoch and slot
 const query = {
     epoch: 3,   // Required, epoch to check
     slot: 24    // Optional
@@ -133,3 +133,12 @@ cardano.transactionLast()
 ### test
 
 ``` npm test```
+
+### issues
+
+Something not working?  Please [open an issue](https://github.com/funador/cardano-api/issues)
+
+### cardano tips
+ ```DdzFFzCqrht8iQ2utWYssBnfGvSqkGfM7fxHXZWoB57ormT17td1CY4Eye7bADF6HpeGC57vwV5ZPzmVjiZRQEkAD9Rc4P8LDF7FfYne```
+ 
+ ##### Cheers!
