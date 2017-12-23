@@ -5,25 +5,23 @@ Promise wrapper for the [Cardano API](https://cardanodocs.com/technical/explorer
 ```js
 const { cardano } = require('cardano-api')
 
-const query = {
-    address: 'Ae2tdP...fQwGpm' // the address to check
-}
+const address = 'Ae2tdP...fQwGpm' // the address to check
 
 // promise
-cardano.address(query)
+cardano.address({address})
   .then(data => console.log('address', data))
   .catch(err => console.log('err', err))
 
 // async/await
-const myCardanoFunc = async () => {
+const myCardanoFunc = async address => {
   try {
-    const data = await cardano.address(query)
+    const data = await cardano.address(address)
     console.log(data)  
   }
   catch(err) { console.log(err) }
 }
 
-myCardanoFunc()
+myCardanoFunc({address})
 ```
 
 # Endpoints
@@ -154,4 +152,4 @@ Something not working?  Please [open an issue](https://github.com/funador/cardan
 ### Cardano tips
  ```DdzFFzCqrht8iQ2utWYssBnfGvSqkGfM7fxHXZWoB57ormT17td1CY4Eye7bADF6HpeGC57vwV5ZPzmVjiZRQEkAD9Rc4P8LDF7FfYne```
  
- ##### Thank You
+ #### Thank You
