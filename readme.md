@@ -7,7 +7,7 @@ Promise wrapper for the [Cardano API](https://cardanodocs.com/technical/explorer
 const { cardano } = require('cardano-api')
 
 const query = {
-    address: 'Ae2tdPwU...fQwGpm' // the address to query
+    address: 'Ae2tdP...fQwGpm' // the address to query
 }
 
 // promise
@@ -34,7 +34,7 @@ myCardanoFunc()
 ```js
 // Get summary information about an address
 const query = {
-    address: 'Ae2tdPwU...fQwGpm' // Required, wallet address to check
+    address: 'Ae2tdP...fQwGpm' // Required, wallet address to check
 }
 
 cardano.address(query)
@@ -45,7 +45,7 @@ cardano.address(query)
 ```js
 // Get block's summary information
 const query = {
-    hash: 'Ae2tdPwU...fQwGpm' // Required, block hash to check
+    hash: '52659d...195a70' // Required, block hash to check
 }
 
 cardano.block(query)
@@ -116,7 +116,7 @@ cardano.epoch(query)
 ```js
 // Get summary information about a transaction
 const query = {
-    txid: 'Ae2tdPwU...fQwGpm' // Required, transaction to check
+    txid: 'f3d468...3ac99b' // Required, transaction to check
 }
 
 cardano.transaction(query)
