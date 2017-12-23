@@ -1,0 +1,21 @@
+{
+  "name": "cardano-api",
+  "version": "0.0.1",
+  "description": "Node promise wrapper for the Cardano Explorer API",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "cardano"
+  ],
+  "author": "jesse heaslip",
+  "license": "MIT",
+  "dependencies": {
+    "request": "^2.83.0"
+  },
+  "devDependencies": {
+    "assert": "^1.4.1",
+    "mocha": "^4.0.1"
+  }
+}
