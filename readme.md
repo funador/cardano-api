@@ -9,14 +9,14 @@ const address = 'DdzFFzCqrht8iQ2utWYssBnfGvSqkGfM7fxHXZWoB57ormT17td1CY4Eye7bADF
 
 // promise
 cardano.address({address})
-  .then(data => console.log('address', data))
+  .then(data => console.log('promise', data))
   .catch(err => console.log('err', err))
 
 // async/await
 const myCardanoFunc = async address => {
   try {
     const data = await cardano.address(address)
-    console.log(data)  
+    console.log('async/await', data)  
   }
   catch(err) { console.log(err) }
 }
