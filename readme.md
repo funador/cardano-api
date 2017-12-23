@@ -5,7 +5,7 @@ Promise wrapper for the [Cardano API](https://cardanodocs.com/technical/explorer
 ```js
 const { cardano } = require('cardano-api')
 
-const address = 'Ae2tdP...fQwGpm' // the address to check
+const address = 'DdzFFzCqrht8iQ2utWYssBnfGvSqkGfM7fxHXZWoB57ormT17td1CY4Eye7bADF6HpeGC57vwV5ZPzmVjiZRQEkAD9Rc4P8LDF7FfYne'
 
 // promise
 cardano.address({address})
