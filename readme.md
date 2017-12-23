@@ -1,7 +1,7 @@
 # cardano-api
 
 Promise wrapper for the [Cardano API](https://cardanodocs.com/technical/explorer/api/).  
-### do not use at the moment, pls!
+### This is not quite finished :/
 
 ```js
 const { cardano } = require('cardano-api')
