@@ -34,7 +34,7 @@ myCardanoFunc()
 ```js
 // Get summary information about an address
 const query = {
-    address: 'Ae2tdP...fQwGpm' // Required, wallet address to check
+    address: 'Ae2tdP...fQwGpm'  // Required, wallet address to check
 }
 
 cardano.address(query)
@@ -53,7 +53,6 @@ cardano.block(query)
 ```
 
 #### cardano.pagesTotal() - [/api/blocks/pages/total](https://cardanodocs.com/technical/explorer/api/#path--api-blocks-pages-total)
-Get the list of total pages
 
 ```js
 // Get the list of total pages
@@ -103,7 +102,7 @@ cardano.genesisSummary()
 ```js
 // Search the blocks by epoch and slot. Slot is optional
 const query = {
-    epoch: 3,    // Required, epoch to check
+    epoch: 3,   // Required, epoch to check
     slot: 24    // Optional
 }
 
@@ -130,9 +129,6 @@ cardano.transaction(query)
 cardano.transactionLast()
   .then(data => console.log('transactionLast', data))
 ```
-
-
-- A couple of the endpoints are represented with breaking changes in the official documentation, assume that more could change in the future
 
 ### test
 
