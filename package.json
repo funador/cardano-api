@@ -1,7 +1,7 @@
 {
   "name": "cardano-api",
-  "version": "0.0.4",
-  "description": "Node promise wrapper for the Cardano Explorer API",
+  "version": "0.0.5",
+  "description": "Node wrapper for the Cardano Explorer API",
   "main": "lib/cardano.js",
   "scripts": {
     "test": "mocha"
