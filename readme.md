@@ -101,7 +101,7 @@ cardano.genesisPagesTotal(query)
   .then(data => console.log('genesisPagesTotal', data))
 ```
 
-#### cardano.genesisSummary() - [/api/genesis/address/pages/total](https://cardanodocs.com/technical/explorer/api/#path--api-genesis-summary)
+#### cardano.genesisSummary() - [/api/genesis/summary](https://cardanodocs.com/technical/explorer/api/#path--api-genesis-summary)
 
 ```js
 cardano.genesisSummary()
