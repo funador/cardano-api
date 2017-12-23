@@ -141,4 +141,4 @@ Something not working?  Please [open an issue](https://github.com/funador/cardan
 ### cardano tips
  ```DdzFFzCqrht8iQ2utWYssBnfGvSqkGfM7fxHXZWoB57ormT17td1CY4Eye7bADF6HpeGC57vwV5ZPzmVjiZRQEkAD9Rc4P8LDF7FfYne```
  
- ##### Cheers!
+ ##### Thank you
