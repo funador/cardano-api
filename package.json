@@ -6,6 +6,10 @@
   "scripts": {
     "test": "mocha"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/funador/cardano-api.git"
+  },
   "keywords": [
     "cardano"
   ],
