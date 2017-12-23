@@ -27,7 +27,7 @@ const myCardanoFunc = async () => {
 myCardanoFunc()
 ```
 
-# Supported Endpoints
+# Endpoints
 
 #### cardano.address() - [/api/addresses/summary/{address}](https://cardanodocs.com/technical/explorer/api/#path--api-addresses-summary--address-)
 
@@ -49,6 +49,17 @@ const query = {
 }
 
 cardano.block(query)
+  .then(data => console.log('block', data))
+```
+
+#### cardano.blockTransaction() - [/api/blocks/txs/{hash}](https://cardanodocs.com/technical/explorer/api/#path--api-blocks-txs--hash-)
+```js
+// Get brief information about transactions
+const query = {
+    hash: '52659d...195a70' // Required, block hash to check
+}
+
+cardano.blockTransaction(query)
   .then(data => console.log('block', data))
 ```
 

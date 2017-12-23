@@ -66,6 +66,24 @@ describe('cardano api wrapper', () => {
     })
   })
 
+  describe('cardano.blockTransaction()', () => {
+    it('should return information about transactions', () => {
+      const query = {
+        hash: '52659df3f8ef7997e0dc8c04b041a956512429b95f4a28275cb53c9f6a195a70',
+        limit: 10,
+        offset: 10
+      }
+
+      return cardano.blockTransaction(query)
+        .then(data => {
+          assert.equal('Right', Object.keys(data)[0])
+        })
+        .catch(err => {
+          console.log('ERR', err)
+        })
+    })
+  })
+
   describe('cardano.pagesTotal()', () => {
     it('should return the total amount of blocks', () => {
       const query = {
