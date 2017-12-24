@@ -1,6 +1,6 @@
 # cardano-api
 
-Wrapper for the [Cardano API](https://cardanodocs.com/technical/explorer/api/).  
+Wrapper for the [Cardano Explorer API](https://cardanodocs.com/technical/explorer/api/).  
 
 ```js
 const { cardano } = require('cardano-api')
