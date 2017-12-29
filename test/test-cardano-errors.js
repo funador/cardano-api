@@ -1,12 +1,12 @@
 const assert = require('assert')
-const { cardano } = require('../lib/cardano')
+const cardano = require('../lib/cardano')
 
-describe('cardano error tests', () => {
+describe('cardano api error tests', () => {
 
   // Supported Methods
   // ## address
-  // ## blockPages
-  // ## pagesTotal
+  // ## blocksPages
+  // ## blocksTotal
   // ## block
   // ## genesisAddress
   // ## genesisPagesTotal
@@ -84,13 +84,13 @@ describe('cardano error tests', () => {
     })
   })
 
-  describe('cardano.blockPages()', () => {
+  describe('cardano.blocksPages()', () => {
     it('should return message on bad query', () => {
       const query = {
         hash: '52659df3f8ef79...4a28275cb53c9f6a195a70',
       }
 
-      return cardano.blockPages(query)
+      return cardano.blocksPages(query)
         .then(data => { 
           console.log(data)
         })
@@ -118,13 +118,13 @@ describe('cardano error tests', () => {
     })
   })
 
-  describe('cardano.pagesTotal()', () => {
+  describe('cardano.blocksTotal()', () => {
     it('should return the total amount of blocks', () => {
       const query = {
         pageSized: 3,
       }
 
-      return cardano.pagesTotal(query)
+      return cardano.blocksTotal(query)
         .then(data => {
           console.log(data)
         })

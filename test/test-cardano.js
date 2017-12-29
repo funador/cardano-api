@@ -1,12 +1,12 @@
 const assert = require('assert')
-const { cardano } = require('../lib/cardano')
+const cardano = require('../lib/cardano')
 
-describe('cardano api wrapper', () => {
+describe('cardano api success tests', () => {
 
   // Supported Methods
   // ## address
   // ## blockPages
-  // ## pagesTotal
+  // ## blocksTotal
   // ## block
   // ## genesisAddress
   // ## genesisPagesTotal
@@ -49,14 +49,14 @@ describe('cardano api wrapper', () => {
     })
   })
 
-  describe('cardano.blockPages()', () => {
+  describe('cardano.blocksPages()', () => {
     it('should return the total amount of blocks', () => {
       const query = {
         pageSize: 10,
         page: 1
       }
 
-      return cardano.blockPages(query)
+      return cardano.blocksPages(query)
         .then(data => {
           assert.equal('Right', Object.keys(data)[0])
         })
@@ -84,13 +84,13 @@ describe('cardano api wrapper', () => {
     })
   })
 
-  describe('cardano.pagesTotal()', () => {
+  describe('cardano.blocksTotal()', () => {
     it('should return the total amount of blocks', () => {
       const query = {
         pageSize: 3,
       }
 
-      return cardano.pagesTotal(query)
+      return cardano.blocksTotal(query)
         .then(data => {
           assert.equal('Right', Object.keys(data)[0])
         })

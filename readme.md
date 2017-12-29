@@ -3,7 +3,7 @@
 Wrapper for the [Cardano Explorer API](https://cardanodocs.com/technical/explorer/api/).  
 
 ```js
-const { cardano } = require('cardano-api')
+const cardano = require('cardano-api')
 
 const address = 'DdzFFzCqrht8iQ2utWYssBnfGvSqkGfM7fxHXZWoB57ormT17td1CY4Eye7bADF6HpeGC57vwV5ZPzmVjiZRQEkAD9Rc4P8LDF7FfYne'
 
@@ -60,10 +60,10 @@ const query = {
 }
 
 cardano.blockTransaction(query)
-  .then(data => console.log('block', data))
+  .then(data => console.log('blockTransaction', data))
 ```
 
-#### cardano.pagesTotal() - [/api/blocks/pages/total](https://cardanodocs.com/technical/explorer/api/#path--api-blocks-pages-total)
+#### cardano.blocksTotal() - [/api/blocks/pages/total](https://cardanodocs.com/technical/explorer/api/#path--api-blocks-pages-total)
 
 ```js
 // Get the list of total pages
@@ -71,8 +71,8 @@ const query = {
     pageSize: 3 // Optional
 }
 
-cardano.pagesTotal(query)
-  .then(data => console.log('blockTotal', data))
+cardano.blocksTotal(query)
+  .then(data => console.log('blocksTotal', data))
 ```
 
 #### cardano.genesisAddress() - [/api/genesis/address/pages](https://cardanodocs.com/technical/explorer/api/#path--api-genesis-address-pages)
@@ -147,8 +147,3 @@ Something not working?  Please [open an issue](https://github.com/funador/cardan
 ### Test
 
 ``` npm test```
-
-### Cardano tips
- ```DdzFFzCqrht8iQ2utWYssBnfGvSqkGfM7fxHXZWoB57ormT17td1CY4Eye7bADF6HpeGC57vwV5ZPzmVjiZRQEkAD9Rc4P8LDF7FfYne```
- 
-##### Thank You
