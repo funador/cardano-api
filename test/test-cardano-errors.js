@@ -38,7 +38,7 @@ describe('cardano error tests', () => {
           console.log(data)
         })
         .catch(err => {
-          assert.equal('please provide an address, txid, epoch or hash', err)
+          assert.equal(`'address' key is required to query this endpoint`, err)
         })
     })
 
@@ -79,7 +79,7 @@ describe('cardano error tests', () => {
           console.log(data)
         })
         .catch(err => {
-          assert.equal('please provide an address, txid, epoch or hash', err)
+          assert.equal(`'hash' key is required to query this endpoint`, err)
         })
     })
   })
@@ -156,7 +156,7 @@ describe('cardano error tests', () => {
           console.log(data)
         })
         .catch(err => {
-          assert.equal('please provide an address, txid, epoch or hash', err)
+          assert.equal(`'epoch' key is required to query this endpoint`, err)
         })
     })
   })
@@ -218,7 +218,7 @@ describe('cardano error tests', () => {
           console.log(data)
         })
         .catch(err => {
-          assert.equal('please provide an address, txid, epoch or hash', err)
+          assert.equal(`'txid' key is required to query this endpoint`, err)
         })
     })
   })
