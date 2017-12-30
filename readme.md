@@ -66,7 +66,7 @@ cardano.blockTransaction(query)
 #### cardano.blocksTotal() - [/api/blocks/pages/total](https://cardanodocs.com/technical/explorer/api/#path--api-blocks-pages-total)
 
 ```js
-// Get the list of total pages
+// Get the list of total blocks
 const query = {
     pageSize: 3 // Optional
 }
