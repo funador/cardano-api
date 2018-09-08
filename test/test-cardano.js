@@ -195,6 +195,6 @@ describe('cardano api success tests', () => {
           console.log('ERR', err)
         })
     })
-  }) 
+  })
 
 })
