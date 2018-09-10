@@ -1,5 +1,7 @@
 const assert = require('assert')
 const cardano = require('../lib/cardano')
+const buildMethod = require('../lib/build-method');
+let config = require('../lib/config');
 
 describe('cardano api error tests', () => {
 
@@ -91,7 +93,7 @@ describe('cardano api error tests', () => {
       }
 
       return cardano.blocksPages(query)
-        .then(data => { 
+        .then(data => {
           console.log(data)
         })
         .catch(err => {
@@ -236,6 +238,22 @@ describe('cardano api error tests', () => {
           assert.equal('this is not a valid query to this endpoint', err)
         })
     })
-  }) 
+  })
 
+  describe('buildMethod', () => {
+    it('should not panic, but reject promise when invalid data is returned', () => {
+      return buildMethod({
+        method: 'testbadjson',
+        url: 'intl/en/about',
+        path: '',
+        params: []
+      }, 'https://www.google.com')({}).then(d => {
+        assert.fail('should have failed');
+      }).catch(err => {
+        const isCorrectError = err && err.message.indexOf('invalid json') > -1;
+
+        assert.ok(isCorrectError, 'Should have thrown invalid json error');
+      })
+    })
+  })
 })
